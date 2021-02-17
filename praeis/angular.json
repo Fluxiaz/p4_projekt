@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "praeis"
+    }
+  },
+  "defaultProject": "praeis",
+  "cli": {
+    "analytics": "f55583c2-93bb-4854-80c9-e99fe8fe77ac"
+  }
 }
