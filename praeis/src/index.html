@@ -6,8 +6,42 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <style>
+      .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+  .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1976d2;
+  color: white;
+  text-align: center;
+}
+</style>
 </head>
 <body>
+  <!-- Toolbar -->
+<div class="toolbar" role="banner">
+ 
+</div>
   <app-root></app-root>
+
+<!-- Toolbar -->
+<div class="footer">
+  <p>Footer</p>
+</div>
 </body>
 </html>
