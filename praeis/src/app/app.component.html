@@ -1,17 +1,71 @@
-<div>
-  <nav>
-    <ul>
-      <li>
-        <a routerLink="../app.Component" routerLinkActive="active">Login</a>
-      </li>
-      
-        <li>
-          <a routerLink="../basket.Component" routerLinkActive="active">Indkøbskurv</a>
-        </li>
-    </ul>
-  </nav>
+<header>
+  <div class="main_header">
+
+    <div class="main_header_items">  
+    <h1 class="main_h1">Præcis</h1>
+    </div>  
+     <div class="searchbar_div">
+      <input class="searchbar" type="text" placeholder="Søg blandt et hav a produkter..">
+
+     </div>
+    
+
+          <a routerLink="../basket.Component" routerLinkActive="active">Tilbudsavis</a>   
+          <a routerLink="../app.Component" routerLinkActive="active">Login</a>
+          <a routerLink="../basket.Component" routerLinkActive="active">Indkøbskurv</a>   
+          <button type="button" class="basket_button">Indkøbskurv</button>
+  </div>
+  
+</header>
+
+<body>
+<div class="main_body">
+
 </div>
-
-
-
+</body>
 <router-outlet></router-outlet>
+
+<style>
+  .main_header{
+    display:flex;
+    align-items: center;
+    overflow-y: hidden;
+    justify-content: space-around;
+
+  };
+  
+  .main_header_items{
+    vertical-align: middle;
+
+  }
+  .main_body{
+    overflow: hidden;
+    background-color: #F2F9FF;
+    width: 100vw;
+    
+  }
+  .main_h1{
+    font-size: 60px;
+  }
+  .searchbar_div{
+    width: 30%;
+    height: 5em;
+    border-radius: 50px;
+    align-items: cen;
+  }
+  .searchbar{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px; 
+  }
+  .basket_button{
+    border-radius: 50px;  
+    width: 10em;
+    height: 5em;
+    background-color: #3D80D4;
+  }
+  
+</style>
+
+
+
