@@ -1,68 +1,84 @@
-<header>
-  <div class="main_header">
 
-    <div class="main_header_items">  
-    <h1 class="main_h1">Præcis</h1>
-    </div>  
-     <div class="searchbar_div">
-      <input class="searchbar" type="text" placeholder="Søg blandt et hav a produkter..">
-
-     </div>
-    
-
-          <a routerLink="../basket.Component" routerLinkActive="active">Tilbudsavis</a>   
-          <a routerLink="../app.Component" routerLinkActive="active">Login</a>
-          <a routerLink="../basket.Component" routerLinkActive="active">Indkøbskurv</a>   
-          <button type="button" class="basket_button">Indkøbskurv</button>
-  </div>
-  
-</header>
 
 <body>
 <div class="main_body">
-
+  <div class="main_body_h1">
+    <h1>
+      Find de bedste tilbud i denne uge her
+    </h1>
+  </div>
+  <div class="se_tilbud_button_container">
+    <button type="button" class="se_tilbud_button">Se tilbud</button>
+  </div>
+  <div class="spotlight_containers">
+    <div class="ugens_tema_container">
+      <h1 class="container_h1">
+        Ugens tema
+      </h1>
+    </div>
+    <div class="indkøbsliste_container">
+      <h1 class="container_h1">
+        Indkøbsliste
+      </h1>
+    </div>
+    <div class="opret_bruger_container">
+      <h1 class="container_h1">
+        Opret bruger
+      </h1>
+    </div>
+  </div>
 </div>
 </body>
 <router-outlet></router-outlet>
 
 <style>
-  .main_header{
+  
+  .spotlight_containers{
     display:flex;
     align-items: center;
     overflow-y: hidden;
     justify-content: space-around;
-
-  };
-  
-  .main_header_items{
-    vertical-align: middle;
-
   }
-  .main_body{
-    overflow: hidden;
-    background-color: #F2F9FF;
-    width: 100vw;
+  .ugens_tema_container{
+    background-color: #7D91BF;
+    width: 22em ;
+    height: 12em;
+  }
+  .indkøbsliste_container{
+    background-color: #64C68E;
+    width: 22em ;
+    height: 12em;
+  }
+  .opret_bruger_container{
+    background-color: #BF887D;
+    width: 22em ;
+    height: 12em;
+  }
+  .main_body_h1{
+    display: flex;
+    justify-content: center;
+  }
+  .se_tilbud_button_container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .se_tilbud_button{
+    background-color: #3D80D4;
+    width: 15%;
+    height: 80px;
+    border-radius: 50px;
     
   }
-  .main_h1{
-    font-size: 60px;
+  .container_h1{
+    color: white;
+    display: flex;
+    justify-content: center;
   }
-  .searchbar_div{
-    width: 30%;
-    height: 5em;
-    border-radius: 50px;
-    align-items: cen;
-  }
-  .searchbar{
-    width: 100%;
-    height: 100%;
-    border-radius: 50px; 
-  }
-  .basket_button{
-    border-radius: 50px;  
-    width: 10em;
-    height: 5em;
-    background-color: #3D80D4;
+  .se_tilbud_button{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
   }
   
 </style>
