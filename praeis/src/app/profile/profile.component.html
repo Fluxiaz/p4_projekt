@@ -1,6 +1,24 @@
 <body>
-    
-    <div class="my_profile_main">
+    <div class="my_profile_tabs">
+        <div class="my_profile_details_tab">
+            <button class="my_profile_detals_tab_button">
+
+            </button>
+        </div>
+        
+        <div class="my_profile_carddetails_tab">
+            <button>
+                
+            </button>
+        </div>
+
+        <div class="my_profile_orderhistory_tab">
+            <button>
+                
+            </button>
+        </div>
+    </div>
+    <div class="my_profile_info">
         <h1 class="mainh1">
             Min profil
         </h1>
@@ -97,6 +115,45 @@
         </div>
 
     </div>
+    <div class="my_profile_details">
+        <h1 class="mainh1">
+            Betalingsoplysninger
+        </h1>
+        <div class="my_profile_cardnumber">
+            <h2 class="my_profile_h">
+                Kortnummer
+            </h2>
+            <div class="my_profile_input">
+                <input class="profile_input_width" type="text" placeholder="Kortnummer">
+            </div>
+        </div>
+        <div class="my_profile_expincvr">
+            <div class="my_profile_expi">
+                <h2 class="my_profile_h">
+                    Udløbsdato
+                </h2>
+                <div class="my_profile_input">
+                    <input class="profile_input" type="text" placeholder="f.eks 09/24">
+                </div>
+            </div>          
+            <div class="my_profile_cvr">
+                <h2 class="my_profile_h">
+                    CVR
+                </h2>
+                <div class="my_profile_input">
+                    <input class="profile_input" type="text" placeholder="f.eks 035">
+                </div>
+            </div>
+        </div> 
+        <div class="my_profile_cardholder">
+            <h2 class="my_profile_h">
+                Kortholder
+            </h2>
+            <div class="my_profile_input">
+                <input class="profile_input_width" type="text" placeholder="Kortholders navn">
+            </div>
+        </div> 
+    </div>
 
 </body>
 
@@ -107,7 +164,7 @@
     button:focus {
     outline: none;
 }
-    .my_profile_main{
+    .my_profile_info, .my_profile_details{
         width: 100%;
         height: 100%;
         background:  #F2F9FF;
@@ -172,6 +229,7 @@
         display: flex;
         justify-content: center;
         margin-top: 3em;
+        margin-bottom: 3em;
     }
     .my_profile_button_specific{
         background: #3D80D4;
@@ -183,7 +241,31 @@
     }
     .my_profile_input input[type=text]{
         padding-left: 1em;
+        color: #3D80D4;
         
+    }
+
+    .my_profile_expinCVR{
+        display: flex;
+        padding-left: 6em;
+        padding-right: 6em;
+    }
+    .my_profile_expi{
+        padding-right: 4em;
+    }
+    .my_profile_cardnumber, .my_profile_cardholder{
+        padding-left: 6em;
+    }
+    .my_profile_tabs{
+        display: flex;
+        background-color: #F2F9FF;
+
+    }
+    .my_profile_details_tab, .my_profile_carddetails_tab, .my_profile_orderhistory_tab{
+        background-color: #3D80D4;
+        width: 5em;
+        height: 2em;
+        margin-left: 2em;
     }
     
     
