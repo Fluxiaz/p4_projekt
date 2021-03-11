@@ -3,8 +3,8 @@
     <div class="my_profile_info">
         <div class="my_profile_tabs">
             <div class="my_profile_details_tab">
-                <button class="my_profile_details_tab_button">
-                    <p class="my_profile_details_tab_button_p">
+                <button class="my_profile_details_tab_button" (click)="onSelect()">
+                    <p class="my_profile_details_tab_button_p" [hidden]="IsHidden">
                         Min profil
                     </p>
                 </button>
