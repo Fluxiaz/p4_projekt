@@ -19,4 +19,4 @@ const routes: Routes = [
 })
 
 export class AppRoutingModule { }
-export const routingComponets = [AdministrationComponent, BasketComponent, ItemsComponent, ProfileComponent]
+export const routingComponets = [AdministrationComponent, BasketComponent, ItemsComponent, ProfileComponent, ]
