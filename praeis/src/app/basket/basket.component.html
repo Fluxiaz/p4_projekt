@@ -1,12 +1,41 @@
 
   <div class="main_body">
+    <div class="items_overview">
+      <h1 class="H1">
+        Din kurv
+      </h1>
+    </div>
+    <div class="total_overview">
 
-    
-   
+      <h1 class="H1">Total for produkter
+
+      </h1>
+      <div class="total_total">
+        <p>Pris i alt(inkl. moms) </p>
+        <h1>
+          pris
+        </h1>
+        
+
+      </div>
+      <div class="total_button_div">
+        <button class="total_button">
+          Betal
+        </button>
+      </div>
+      <div class="kampagnekode_div">
+        <p>
+          Kampagnekode
+        </p>
+        <input class="kampagnekode_input" type="Kampagnekode">
+
+      </div>
+
+
+    </div>
+      
   </div>
-  <div class="items_overview">
-
-</div>
+ 
 
 
 <style>
@@ -18,15 +47,60 @@
 }
 
   .main_body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F2F9FF;
-    width: 50vw;
-    height: 80%;
+    width: 100vw;
+    height: 100%;
     margin: 0px;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    
+    
   }
+
   .items_overview{
-      width: 40%;
-      height: 40%;
-      color: red;
+      width: 30%;
+      background-color: white;
+      margin-right: 3em;
+  }
+  .total_overview{
+      width: 30%;
+      margin-left: 3em;
+
+      
+  }
+  .total_total{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #3D80D4;
+  }
+  .H1{
+    color: #3D80D4;
+    display: flex;
+    justify-content: center;
+  }
+  .total_button_div{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+  }
+  .total_button{
+    background-color: #3D80D4;
+    width: 17em;
+    height: 4em;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+  }
+  .kampagnekode_div{
+    margin-top: 2em;
+    justify-content: center;
+    background-color: white;
   }
 
 </style>
