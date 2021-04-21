@@ -1,6 +1,7 @@
 
-<body>
     <app-root></app-root>
+
+<body>
     <div class="main_body">
         <div class="main_body_h1">
             <h1>
@@ -20,17 +21,24 @@
                 <h1 class="container_h1">
                     Indkøbsliste
                 </h1>
+                <div class="indkøbsliste_inner_container">
+                    Hold styr på dine vare med en personlig indkøbsliste
+                    <img class="indkøbsliste_img" src="/praeis/list pic.png" alt="">
+                </div>
             </div>
             <div class="opret_bruger_container">
                 <h1 class="container_h1">
                     Opret bruger
                 </h1>
+                <div class="opret_bruger_inner_container">
+                    Opret et bruger hurtigt og nemt
+                    <img class="opret_bruger_img" src="/praeis/profile pic.png" alt="">
+                </div>
             </div>
         </div>
     </div>
 </body>
 <router-outlet></router-outlet>
-
 <style>
     input:focus,
     select:focus,
@@ -42,6 +50,7 @@
     .main_body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: #F2F9FF;
+        
     }
     
     .spotlight_containers {
@@ -53,20 +62,20 @@
     
     .ugens_tema_container {
         background-color: #7D91BF;
-        width: 22em;
-        height: 12em;
+        width: 25em;
+        height: 15em;
     }
     
     .indkøbsliste_container {
         background-color: #64C68E;
-        width: 22em;
-        height: 12em;
+        width: 25em;
+        height: 15em;
     }
     
     .opret_bruger_container {
         background-color: #BF887D;
-        width: 22em;
-        height: 12em;
+        width: 25em;
+        height: 15em;
     }
     
     .main_body_h1 {
@@ -92,7 +101,18 @@
         color: white;
         display: flex;
         justify-content: center;
-        font-weight: 400;
+        font-weight: 600;
+    }
+    .opret_bruger_img, .indkøbsliste_img{
+        float: right;
+    }
+    .opret_bruger_inner_container, .indkøbsliste_inner_container{
+        display: flex;
+        margin: 0px;
+        margin-left: 2em;
+        color: white;
+        font-size: 18px;
+        
     }
     
     .se_tilbud_button {
